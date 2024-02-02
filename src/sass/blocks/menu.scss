@@ -18,55 +18,29 @@
         align-items: center;
     }
 
+    &__link{
+        color:#2A86E5;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
     &__newitems {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
         align-items: center;
     }
 
-    // &__newlink {
-    // }
-
-    &__icon1::before {
-        content: '';
-        background-image: url(../images/icon/i.svg);
-        background-repeat: no-repeat;
-        display: inline-block;
-        background-size: contain;
-        width: 15px;
-        height: 15px;
+    &__newlink {
+        display: flex;
+        align-items: center;
+        color: #707070;
+        font-weight: 500px;
+        font-size: 18px;
+        line-height: 18px;
     }
 
-    &__icon2::before {
-        content: '';
-        background-image: url(../images/icon/i-1.svg);
-        background-repeat: no-repeat;
-        display: inline-block;
-        background-size: contain;
-        width: 15px;
-        height: 15px;
-    }
-
-    &__icon3::before {
-        content: '';
-        background-image: url(../images/icon/i-2.svg);
-        background-repeat: no-repeat;
-        display: inline-block;
-        background-size: contain;
-        width: 15px;
-        height: 15px;
-    }
-
-    &__icon4::before {
-        content: '';
-        background-image: url(../images/icon/i-3.svg);
-        background-repeat: no-repeat;
-        display: inline-block;
-        background-size: contain;
-        width: 15px;
-        height: 15px;
-    }
 }
 
 .form {
@@ -82,5 +56,7 @@
         height: 40px;
         background-color: #EEEEEE;
         padding-left: 20px;
+        font-size: 16px;
+        line-height: 20px;
     }
 }

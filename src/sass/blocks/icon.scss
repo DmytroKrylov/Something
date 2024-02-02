@@ -49,10 +49,34 @@
         background-repeat: no-repeat;
     }
 
-    &--search{
+    &--search {
         background-image: url(../images/icon/button.svg);
         background-repeat: no-repeat;
         position: absolute;
         right: 20px;
+    }
+
+    &--tel {
+        background-image: url(../images/icon/i.svg);
+        background-repeat: no-repeat;
+        background-position: 60% 45%;
+    }
+
+    &--filter {
+        background-image: url(../images/icon/i-1.svg);
+        background-repeat: no-repeat;
+        background-position: 60% 45%;
+    }
+
+    &--android {
+        background-image: url(../images/icon/i-2.svg);
+        background-repeat: no-repeat;
+        background-position: 60% 45%;
+    }
+
+    &--ios {
+        background-image: url(../images/icon/i-3.svg);
+        background-repeat: no-repeat;
+        background-position: 60% 45%;
     }
 }
