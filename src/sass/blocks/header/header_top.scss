@@ -1,0 +1,30 @@
+.header {
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+        background: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);    }
+
+    &__social {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__themeswitcher {
+        width: 55px;
+        background-color: white;
+        border-radius: 50px;
+        padding: 3px;
+
+        &::after {
+            content: '';
+            display: block;
+            background-image: url(../images/icon/span_before.svg);
+            background-size: contain;
+            width: 50%;
+            padding-bottom: 50%;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.icon {
+    display: block;
+    width: 29px;
+    height: 29px;
+
+    &--fb {
+        background-image: url(../images/icon/a.svg);
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+    }
+
+    &--twitter {
+        background-image: url(../images/icon/a-1.svg);
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+    }
+
+    &--instagram {
+        background-image: url(../images/icon/a-2.svg);
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+    }
+
+    &--youtube {
+        background-image: url(../images/icon/a-3.svg);
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+    }
+
+    &--google {
+        background-image: url(../images/icon/a-4.svg);
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+    }
+
+    &--wifi {
+        background-image: url(../images/icon/a-5.svg);
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+    }
+
+    &__burger {
+        background-image: url(../images/icon/burger.svg);
+        background-repeat: no-repeat;
+    }
+}
