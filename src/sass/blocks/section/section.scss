@@ -1,0 +1,53 @@
+.section {
+
+    background-color: rgba(217, 217, 217, 0.2);  
+
+    &__content {
+        @include contentPaddingInline();
+        padding-top: 20px;
+    }
+
+    &__crumbs {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #707070;
+    }
+
+    &__title {
+        background: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);
+        background-clip: text;
+        color: transparent;
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 45.5px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: #707070;
+        margin-bottom: 60px;
+    }
+
+    &__titlesecond {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: #707070;
+
+        &::after {
+            content: '';
+            width: 45;
+            height: 8;
+            background: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);
+            display: block;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+    }
+}    
