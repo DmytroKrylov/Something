@@ -31,3 +31,22 @@
         min-width: 380px;
     }
 }
+
+.go {
+    &__back {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        font-weight: 700;
+        color: #FFFFFF;
+        background-color: $third-color-text;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        padding: 25px;
+        border-radius: 100px;
+        transition: transform .5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

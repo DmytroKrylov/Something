@@ -1,0 +1,88 @@
+.social {
+
+    display: none;
+
+    @include onDesktop {
+        display: block;
+
+        &__share {
+            position: absolute;
+            top: 40%;
+            left: 0;
+        }
+    
+        &__items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            transition: transform .5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+    
+            &--1 {
+                background-color: #3A579A;
+            }
+    
+            &--2 {
+                background-color: #00ABF0;
+            }
+    
+            &--3 {
+                background-color: #24A2E0;
+            }
+    
+            &--4 {
+                background-color: #CD1C1F;
+            }
+    
+            &--5 {
+                background-color: #FC461E;
+            }
+    
+            &--6 {
+                background-color: #F95149;
+            }
+        }
+    
+        &__item1 {
+            background-image: url(../images/facebook-f.svg);
+            width: 20px;
+            height: 20px;
+        }
+    
+        &__item2 {
+            background-image: url(../images/twitter12.svg);
+            width: 20px;
+            height: 20px;
+        }
+    
+        &__item3 {
+            background-image: url(../images/twitter11.svg);
+            width: 20px;
+            height: 20px;
+        }
+    
+        &__item4 {
+            background-image: url(../images/pinterest.svg);
+            width: 20px;
+            height: 20px;
+        }
+    
+        &__item5 {
+            background-image: url(../images/reddit-alien.svg);
+            width: 20px;
+            height: 20px;
+        }
+    
+        &__item6 {
+            background-image: url(../images/frame.svg);
+            width: 20px;
+            height: 20px;
+        }
+    
+    }
+}
