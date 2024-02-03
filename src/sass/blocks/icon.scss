@@ -2,6 +2,12 @@
     display: block;
     width: 29px;
     height: 29px;
+    transition: transform .5s;
+
+    &:hover {
+        transform: scale(1.4);
+    }
+
 
     &--fb {
         background-image: url(../images/icon/a.svg);
@@ -56,8 +62,11 @@
     &--search {
         background-image: url(../images/icon/button.svg);
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
         position: absolute;
         right: 20px;
+        top: -5px;
         cursor: pointer;
     }
 
@@ -89,36 +98,72 @@
         background-image: url(../images/icon/footer5.svg);
         background-position: 50% 35%;
         background-repeat: no-repeat;
+        transition: transform .5s;
+
+            &:hover {
+        transform: scale(1.4);
+    }
+
     }
 
     &--ftwitter {
         background-image: url(../images/icon/footer.svg);
         background-position: 50% 35%;
         background-repeat: no-repeat;
+        transition: transform .5s;
+
+            &:hover {
+        transform: scale(1.4);
+    }
+
     }
 
     &--finstagram {
         background-image: url(../images/icon/footer1.svg);
         background-position: 50% 35%;
         background-repeat: no-repeat;
+        transition: transform .5s;
+
+            &:hover {
+        transform: scale(1.4);
+    }
+
     }
 
     &--fyoutube {
         background-image: url(../images/icon/footer2.svg);
         background-position: 50% 35%;
         background-repeat: no-repeat;
+        transition: transform .5s;
+
+            &:hover {
+        transform: scale(1.4);
+    }
+
     }
 
     &--fgoogle {
         background-image: url(../images/icon/footer3.svg);
         background-position: 50% 35%;
         background-repeat: no-repeat;
+        transition: transform .5s;
+
+            &:hover {
+        transform: scale(1.4);
+    }
+
     }
 
     &--fwifi {
         background-image: url(../images/icon/footer4.svg);
         background-position: 50% 35%;
         background-repeat: no-repeat;
+        transition: transform .5s;
+
+            &:hover {
+        transform: scale(1.4);
+    }
+
     }
 
     &--telw {

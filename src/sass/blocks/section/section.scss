@@ -98,6 +98,14 @@
     &__gridcard {
         @include onDesktop {
             grid-column: 10/13;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 20px;
+        }
+        
+        transition: transform .5s;
+
+        &:hover {
+            transform: scale(1.05);
         }
     }
 
@@ -129,6 +137,12 @@
             padding: 20px;
             background-color: $first-bg-color;
             border-radius: 20px;
+            transition: transform .5s;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            &:hover {
+                transform: scale(1.05);
+            }
 
             @include onTablet {
                 grid-column: span 3;

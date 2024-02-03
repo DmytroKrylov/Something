@@ -39,6 +39,11 @@
         padding: 72px 72px 0px 72px;
         color: black;
         margin-bottom: 65px;
+        transition: transform .5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &__desc {
@@ -129,6 +134,9 @@
         font-size: 15px;
         line-height: 20px;
         color: $white-color-text;
+        cursor: pointer;
+
+        @include hover (transform, scale(1.2))
     }
 
     &__links {

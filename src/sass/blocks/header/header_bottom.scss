@@ -33,4 +33,12 @@
         }
     }
 
+    &__logo {
+        transition: transform .5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
 }

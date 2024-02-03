@@ -10,7 +10,6 @@
     }
 }
 
-
 @mixin contentPaddingInline() {
     padding-inline: 15px;
 
@@ -23,7 +22,6 @@
     }
 }
 
-
 @mixin pageGrid {
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -32,4 +30,11 @@
     @include onDesktop() {
       grid-template-columns: repeat(12,1fr);
     }
+}
+
+@mixin hover($property, $toValue) {
+  transition: #{$property} 0.5s;
+  &:hover {
+    #{$property}: $toValue
+  }
 }
