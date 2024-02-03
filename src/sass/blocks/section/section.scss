@@ -5,6 +5,7 @@
     &__content {
         @include contentPaddingInline();
         padding-top: 20px;
+        padding-bottom: 130px;
     }
 
     &__crumbs {
@@ -48,6 +49,38 @@
             display: block;
             border-radius: 20px;
             margin-top: 10px;
+            margin-bottom: 20px;
         }
     }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .article {
+
+        &__card {
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        &__img {
+            border-radius: 20px;
+            margin-bottom: 18px;
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26.5px;
+            text-align: center;
+            color: #2A86E5;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
 }    

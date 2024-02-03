@@ -79,4 +79,41 @@
         background-repeat: no-repeat;
         background-position: 60% 45%;
     }
+
+    &--ffb {
+        background-image: url(../images/icon/footer5.svg);
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+    }
+
+    &--ftwitter {
+        background-image: url(../images/icon/footer.svg);
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+    }
+
+    &--finstagram {
+        background-image: url(../images/icon/footer1.svg);
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+    }
+
+    &--fyoutube {
+        background-image: url(../images/icon/footer2.svg);
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+    }
+
+    &--fgoogle {
+        background-image: url(../images/icon/footer3.svg);
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+    }
+
+    &--fwifi {
+        background-image: url(../images/icon/footer4.svg);
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+    }
+
 }
