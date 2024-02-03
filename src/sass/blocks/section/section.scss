@@ -1,7 +1,4 @@
 .section {
-
-    background-color: rgba(217, 217, 217, 0.2);  
-
     &__content {
         @include contentPaddingInline();
         padding-top: 20px;
@@ -226,3 +223,10 @@
     }
 
 }    
+
+.desc {
+    // background-color: #0E1219;
+    &.white {
+        color: white;
+    }
+}

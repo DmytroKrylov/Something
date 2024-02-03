@@ -21,23 +21,6 @@
             margin-left: 50px;
         }
     }
-
-    // &__themeswitcher {
-    //     width: 55px;
-    //     background-color: white;
-    //     border-radius: 50px;
-    //     padding: 3px;
-
-    //     &::after {
-    //         content: '';
-    //         display: block;
-    //         background-image: url(../images/icon/span_before.svg);
-    //         background-size: contain;
-    //         width: 50%;
-    //         padding-bottom: 50%;
-    //         cursor: pointer;
-    //     }
-    // }
     
     &__tabletnav {
         @include onTablet {
@@ -55,28 +38,31 @@
     }
 }
 
-.checkbox { 
+.themeswitcher {
     height: 30px;
     width: 55px;
-    background: white;
-    appearance: none;
-    border-radius: 50px;
+    background-color: white;
     position: relative;
-    outline: none;
-    cursor: pointer;
-    transition: 0.5s;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-        &::after {
-            content: '';
-            position: absolute;
-            top: 2;
-            left: 2;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        background-color: #0DD0BA;
+        border-radius: 50%;
+        top: 50%;
+        left: 2px;
+        transform: translateY(-50%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all .5s;
+    }
 
-            background-image: url(../images/icon/span_before.svg);
-            background-repeat: no-repeat;
-            width: 50%;
-            padding-bottom: 50%;
-            cursor: pointer;
-        }
-
+    &.active::before {
+        background-color: #0E1219;
+        left: calc(100% - 25px - 2px);
+        transition: all .5s;
+    }
 }

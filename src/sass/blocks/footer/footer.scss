@@ -1,11 +1,14 @@
 .footer {
     background-color: $second-bg-color;  
 
+    &.dark {
+        background-color: #0E1219;
+    }
+
     &__wrapper {
         background: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);
         border-radius: 40px; 
         padding: 20px;
-        margin-bottom: 25px;
 
         @include onTablet {
             @include pageGrid
