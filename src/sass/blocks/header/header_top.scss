@@ -6,13 +6,12 @@
         align-items: center;
         padding: 10px 5px;
         background: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);
-    }
 
-    // &__mix {
-    //     display: flex;
-    //     gap: 15px;
-    //     align-items: center;
-    // }
+        @include onDesktop {
+            padding-inline: 200px;
+        }
+    
+    }
 
     &__social {
         display: flex;
@@ -36,6 +35,7 @@
             background-size: contain;
             width: 50%;
             padding-bottom: 50%;
+            cursor: pointer;
         }
     }
     

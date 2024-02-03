@@ -10,6 +10,11 @@
         @include onTablet {
             @include pageGrid
         }
+
+        @include onDesktop {
+            @include contentPaddingInline();
+            align-items: center;
+        }
     }
 
     &__card {
@@ -19,6 +24,10 @@
 
         @include onTablet {
             grid-column: span 6;
+        }
+
+        @include onDesktop {
+            grid-column: span 5;
         }
     }
 
@@ -44,6 +53,10 @@
         @include onTablet {
             width: 80%;
             margin: 0 auto;
+        }
+
+        @include onDesktop {
+            width: 100%;
         }
 
         &--mb {
@@ -84,6 +97,24 @@
 
         @include onTablet {
             grid-column: span 2;
+        }
+
+        &--grid1 {
+            @include onDesktop {
+                grid-column: 6/7;
+            }
+        }
+
+        &--grid2 {
+            @include onDesktop {
+                grid-column: 7/10;
+            }
+        }
+
+        &--grid3 {
+            @include onDesktop {
+                grid-column: 10/13;
+            }
         }
     }
 
@@ -127,6 +158,10 @@
         @include onTablet {
             grid-column: 2/-2;
         }
+    }
+
+    &__containerdesk {
+        padding-inline: 20px;
     }
 
 }

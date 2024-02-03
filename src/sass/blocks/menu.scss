@@ -59,6 +59,14 @@
         line-height: 18px;
     }
 
+    &__none {
+        display: none;
+
+        @include onDesktop {
+            display: flex;
+        }
+    }
+
 }
 
 .form {

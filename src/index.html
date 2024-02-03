@@ -19,6 +19,7 @@
           <li><a class="menu__newlink menu__text" href="#"><span class="icon icon--telw"></span>Menu item 1</a></li>
           <li><a class="menu__newlink menu__text" href="#"><span class="icon icon--filterw"></span>Menu item 2</a></li>
           <li><a class="menu__newlink menu__text" href="#"><span class="icon icon--androidw"></span>Menu item 3</a></li>
+          <li><a class="menu__newlink menu__text menu__none" href="#"><span class="icon icon--iosw"></span>Menu item 4</a></li>
         </ul>
       </nav>
 
@@ -36,6 +37,30 @@
     <div class="header__bottom container">
       <a href="#"><img src="./images/logo.png" width="135" height="20" alt="logo"></a>
       <a href="#menu" class="icon icon--burger"></a>
+
+      <nav class="header__none">
+        <ul class="header__flex">
+          <li><a class="menu__link" href="#">Item</a></li>
+          <li><a class="menu__link" href="#">Item</a></li>
+          <li><a class="menu__link" href="#">Item</a></li>
+          <li><a class="menu__link" href="#">Item</a></li>
+          <li><a class="menu__link" href="#">Item</a></li>
+          <li><a class="menu__link" href="#">Item</a></li>
+          <li><a class="menu__link" href="#">Item</a></li>
+          <li><a class="menu__link" href="#">Item</a></li>
+        </ul>  
+      </nav>
+
+      <form action="/search" method="get" class="form header__form">
+        <label for="input" class="form__label">
+          <div class="icon icon--search"></div>
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            placeholder="Search for…">
+        </label>
+        </form>
     </div>
   </header>
   
@@ -103,50 +128,59 @@
   <main class="main">
     <section class="section">
       <div class="section__content">
-        <p class="section__crumbs">Home > Lorem Ipsum is > <b>Lorem Ipsum is simply dummy</b></p>
-        <h1 class="section__title">Lorem Ipsum is simply dummy</h1>
-        <p class="section__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <h2 class="section__titlesecond">Similar articles</h2>
-        
-        <div class="section__article">
-          <article class="article__card">
-            <img class="article__img" src="./images/img.png" alt="article">
-            <h3 class="article__title">Lorem Ipsum is simply dummy</h3>
-            <div class="article__user">
-              <p class="article__desc article__desc--user">Alco</p>
-              <p class="article__desc article__desc--clock">26 janvier 2023</p>
-            </div>
-          </article>
-          <article class="article__card">
-            <img class="article__img" src="./images/img.png" alt="article">
-            <h3 class="article__title">Lorem Ipsum is simply dummy</h3>
-            <div class="article__user">
-              <p class="article__desc article__desc--user">Alco</p>
-              <p class="article__desc article__desc--clock">26 janvier 2023</p>
-            </div>
-          </article>
-          <article class="article__card">
-            <img class="article__img" src="./images/img.png" alt="article">
-            <h3 class="article__title">Lorem Ipsum is simply dummy</h3>
-            <div class="article__user">
-              <p class="article__desc article__desc--user">Alco</p>
-              <p class="article__desc article__desc--clock">26 janvier 2023</p>
-            </div>
-          </article>
-          <article class="article__card">
-            <img class="article__img" src="./images/img.png" alt="article">
-            <h3 class="article__title">Lorem Ipsum is simply dummy</h3>
-            <div class="article__user">
-              <p class="article__desc article__desc--user">Alco</p>
-              <p class="article__desc article__desc--clock">26 janvier 2023</p>
-            </div>
-          </article>
+
+        <div class="section__grid">
+          <div class="section__coll">
+            <p class="section__crumbs">Home > Lorem Ipsum is > <b>Lorem Ipsum is simply dummy</b></p>
+            <h1 class="section__title">Lorem Ipsum is simply dummy</h1>
+             <p class="section__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
+             <h2 class="section__titlesecond">Similar articles</h2> 
+          </div>
+
+          <div class=" section__grids">
+            <img  class="section__gridcard section__none" src="./images/ADS.png" alt="ads" width="300" height="600">
+          </div>
         </div>
+        
+      <div class="section__article">
+          <article class="article__card article__card--grid1">
+            <img class="article__img" src="./images/img.png" alt="article">
+            <h3 class="article__title">Lorem Ipsum is simply dummy</h3>
+            <div class="article__user">
+              <p class="article__desc article__desc--user">Alco</p>
+              <p class="article__desc article__desc--clock">26 janvier 2023</p>
+            </div>
+          </article>
+          <article class="article__card article__card--grid2">
+            <img class="article__img" src="./images/img.png" alt="article">
+            <h3 class="article__title">Lorem Ipsum is simply dummy</h3>
+            <div class="article__user">
+              <p class="article__desc article__desc--user">Alco</p>
+              <p class="article__desc article__desc--clock">26 janvier 2023</p>
+            </div>
+          </article>
+          <article class="article__card article__card--grid3">
+            <img class="article__img" src="./images/img.png" alt="article">
+            <h3 class="article__title">Lorem Ipsum is simply dummy</h3>
+            <div class="article__user">
+              <p class="article__desc article__desc--user">Alco</p>
+              <p class="article__desc article__desc--clock">26 janvier 2023</p>
+            </div>
+          </article>
+          <article class="article__card article__card--grid4">
+            <img class="article__img" src="./images/img.png" alt="article">
+            <h3 class="article__title">Lorem Ipsum is simply dummy</h3>
+            <div class="article__user">
+              <p class="article__desc article__desc--user">Alco</p>
+              <p class="article__desc article__desc--clock">26 janvier 2023</p>
+            </div>
+          </article>
+      </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer container">
+  <footer class="footer container footer__containerdesk">
     <div class="footer__wrapper">
       <div class="footer__card">
         <a class="footer__logo" href="#">LOGOTYPE</a>
@@ -163,7 +197,7 @@
         </ul>
       </div>
 
-      <div class="footer__wrap">
+      <div class="footer__wrap footer__wrap--grid1">
         <h2 class="footer__title">Categhory</h2>
             <ul class="footer__items">
               <li class="footer__link">item 1</li>
@@ -175,7 +209,7 @@
             </ul>
       </div>
 
-      <div class="footer__wrap">
+      <div class="footer__wrap footer__wrap--grid2">
         <h2 class="footer__title">Play better</h2>
             <ul class="footer__items">
               <li class="footer__link">item 1</li>
@@ -187,7 +221,7 @@
             </ul>
       </div>
 
-      <div class="footer__wrap">
+      <div class="footer__wrap footer__wrap--grid3">
         <h2 class="footer__title">Useful links</h2>
             <ul class="footer__items">
               <li class="footer__link"><span class="footer__telnone">item 1</span><a class="footer__links" href="#">link</a></li>

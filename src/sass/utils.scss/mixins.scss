@@ -4,12 +4,22 @@
     }
   }
 
+@mixin onDesktop {
+    @media (min-width: 1280px) {
+      @content;
+    }
+}
+
 
 @mixin contentPaddingInline() {
     padding-inline: 15px;
 
     @include onTablet() {
         padding-inline: 20px;
+    }
+
+    @include onDesktop() {
+        padding-inline: 200px;
     }
 }
 
@@ -18,4 +28,8 @@
     display: grid;
     grid-template-columns: repeat(6,1fr);
     column-gap: 25px;
+
+    @include onDesktop() {
+      grid-template-columns: repeat(12,1fr);
+    }
 }

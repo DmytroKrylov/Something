@@ -18,6 +18,10 @@
         @include onTablet {
             text-align: left;
         }
+
+        @include onDesktop {
+            grid-column: span 12;
+        }
     }
 
     &__title {
@@ -35,6 +39,10 @@
             line-height: 54px;
             text-align: left;
         }
+
+        @include onDesktop {
+            grid-column: span 8;
+        }
     }
 
     &__desc {
@@ -43,6 +51,10 @@
         line-height: 32px;
         color: $first-color-text;
         margin-bottom: 60px;
+
+        @include onDesktop {
+            grid-column: span 8;
+        }
     }
 
     &__titlesecond {
@@ -50,6 +62,10 @@
         font-size: 20px;
         line-height: 26px;
         color: $first-color-text;
+
+        @include onDesktop {
+            grid-column: span 3;
+        }
 
         &::after {
             content: '';
@@ -73,6 +89,40 @@
         }
     }
 
+    &__grid {
+        @include onDesktop {
+            @include pageGrid
+        }
+    }
+
+    &__gridcard {
+        @include onDesktop {
+            grid-column: 10/13;
+        }
+    }
+
+    &__none {
+        display: none;
+
+        @include onDesktop {
+            display: block;
+        }
+
+    }
+
+    &__coll {
+        @include onDesktop {
+            grid-column: span 12;
+        }
+    }
+
+    &__grids {
+        @include onDesktop {
+            grid-column: spa;
+            margin-bottom: 20px;
+        }
+    }
+
     .article {
 
         &__card {
@@ -83,6 +133,31 @@
             @include onTablet {
                 grid-column: span 3;
             }
+
+            &--grid1 {
+                @include onDesktop {
+                    grid-column: span 6;
+                }    
+            }
+
+            &--grid2 {
+                @include onDesktop {
+                    grid-column: span 6;
+                }    
+            }
+
+            &--grid3 {
+                @include onDesktop {
+                    grid-column: span 6;
+                }    
+            }
+
+            &--grid4 {
+                @include onDesktop {
+                    grid-column: span 6;
+                }    
+            }
+
         }
 
         &__img {

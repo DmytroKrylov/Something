@@ -42,6 +42,10 @@
     &--burger {
         background-image: url(../images/icon/burger.svg);
         background-repeat: no-repeat;
+
+        @include onDesktop {
+            display: none;
+        }
     }
 
     &--close {
@@ -54,6 +58,7 @@
         background-repeat: no-repeat;
         position: absolute;
         right: 20px;
+        cursor: pointer;
     }
 
     &--tel {
@@ -130,6 +135,12 @@
 
     &--androidw{
         background-image: url(../images/icon/white2.svg);
+        background-position: 65% 40%;
+        background-repeat: no-repeat;
+    }
+
+    &--iosw{
+        background-image: url(../images/icon/white4.svg);
         background-position: 65% 40%;
         background-repeat: no-repeat;
     }

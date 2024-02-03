@@ -5,6 +5,32 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include onDesktop {
+            padding-block: 40px;
+        }
+    }
+
+    &__none {
+        display: none;
+
+        @include onDesktop {
+            display: block;
+            margin-right: 35px;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__form {
+        display: none;
+
+        @include onDesktop {
+            display: block;
+        }
     }
 
 }
