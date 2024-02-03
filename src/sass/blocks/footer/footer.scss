@@ -1,15 +1,17 @@
 .footer {
-    background-color: rgba(217, 217, 217, 0.2);  
+    background-color: $second-bg-color;  
 
     &__wrapper {
         background: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);
         border-radius: 40px; 
         padding: 20px;
+        margin-bottom: 25px;
     }
 
     &__card {
-        background-color: white;
+        background-color: $first-bg-color;
         border-radius: 20px;
+        margin-bottom: 25px;
     }
 
     &__logo {
@@ -23,13 +25,18 @@
     }
 
     &__desc {
-        color: #0DD0BA;
+        color: $third-color-text;
         font-weight: 400;
         font-size: 16px;
         line-height: 23px;
         text-align: center;
         padding-inline: 30px;
         margin-bottom: 25px;
+
+        @include onTablet {
+            width: 80%;
+            margin: 0 auto;
+        }
 
         &--mb {
             margin-bottom: 10px;
@@ -40,11 +47,57 @@
         display: flex;
         justify-content: center;
         padding-bottom: 25px;
+        gap: 5px;
+
+        @include onTablet {
+            margin-top: 30px;
+        }
     }
 
     &__icon {
         display: block;
         width: 37px;
         height: 37px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        color: $white-color-text;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: $white-color-text;
+    }
+
+    &__links {
+        color: $white-color-text;
+    }
+
+    &__parag {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        text-align: center;
+        font-style: italic;
+        color: $white-color-text;
     }
 }

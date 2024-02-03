@@ -13,7 +13,11 @@
         font-size: 14px;
         line-height: 18px;
         text-align: center;
-        color: #707070;
+        color: $first-color-text;
+
+        @include onTablet {
+            text-align: left;
+        }
     }
 
     &__title {
@@ -25,13 +29,19 @@
         line-height: 45.5px;
         text-align: center;
         margin-bottom: 20px;
+
+        @include onTablet {
+            font-size: 42px;
+            line-height: 54px;
+            text-align: left;
+        }
     }
 
     &__desc {
         font-weight: 400;
         font-size: 20px;
         line-height: 32px;
-        color: #707070;
+        color: $first-color-text;
         margin-bottom: 60px;
     }
 
@@ -39,7 +49,7 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 26px;
-        color: #707070;
+        color: $first-color-text;
 
         &::after {
             content: '';
@@ -57,14 +67,22 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        @include onTablet {
+            @include pageGrid;
+        }
     }
 
     .article {
 
         &__card {
             padding: 20px;
-            background-color: white;
+            background-color: $first-bg-color;
             border-radius: 20px;
+
+            @include onTablet {
+                grid-column: span 4;
+            }
         }
 
         &__img {
@@ -78,9 +96,43 @@
             font-size: 22px;
             line-height: 26.5px;
             text-align: center;
-            color: #2A86E5;
+            color: $second-color-text;
             width: 80%;
             margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        &__user {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        &__desc {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            color: $user-color;
+            display: inline-flex;
+            gap: 5px;
+            align-items: center;
+
+            &--user::before {
+                content: '';
+                background-image: url(../images/icon/clock.svg);
+                display: block;
+                width: 12px;
+                height: 12px;
+            }
+
+            &--clock::before {
+                content: '';
+                background-image: url(../images/icon/user.svg);
+                display: block;
+                width: 12px;
+                height: 12px;
+            }
+
         }
     }
 
