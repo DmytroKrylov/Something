@@ -1,0 +1,2 @@
+const e=document.querySelector(".main"),t=document.querySelector(".themeswitcher"),c=document.querySelector(".footer"),s=document.querySelector(".desc");t.addEventListener("click",(()=>t.classList.toggle("active"))),c.addEventListener("click",(()=>c.classList.toggle("active"))),s.addEventListener("click",(()=>s.classList.toggle("active"))),t.addEventListener("click",(()=>{e.classList.toggle("dark"),c.classList.toggle("dark"),s.classList.toggle("white")}));
+//# sourceMappingURL=index.53b4a223.js.map
