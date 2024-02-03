@@ -116,4 +116,22 @@
         background-repeat: no-repeat;
     }
 
+    &--telw {
+        background-image: url(../images/icon/white3.svg);
+        background-position: 65% 40%;
+        background-repeat: no-repeat;
+    }
+
+    &--filterw {
+        background-image: url(../images/icon/white1.svg);
+        background-position: 65% 40%;
+        background-repeat: no-repeat;
+    }
+
+    &--androidw{
+        background-image: url(../images/icon/white2.svg);
+        background-position: 65% 40%;
+        background-repeat: no-repeat;
+    }
+
 }

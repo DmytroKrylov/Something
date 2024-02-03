@@ -6,12 +6,20 @@
         border-radius: 40px; 
         padding: 20px;
         margin-bottom: 25px;
+
+        @include onTablet {
+            @include pageGrid
+        }
     }
 
     &__card {
         background-color: $first-bg-color;
         border-radius: 20px;
         margin-bottom: 25px;
+
+        @include onTablet {
+            grid-column: span 6;
+        }
     }
 
     &__logo {
@@ -73,6 +81,10 @@
         gap: 15px;
         align-items: center;
         margin-bottom: 20px;
+
+        @include onTablet {
+            grid-column: span 2;
+        }
     }
 
     &__items {
@@ -90,6 +102,18 @@
 
     &__links {
         color: $white-color-text;
+
+        @include onTablet {
+            display: none;
+        }
+    }
+
+    &__telnone {
+        display: none;
+
+        @include onTablet {
+            display: block;
+        }
     }
 
     &__parag {
@@ -99,5 +123,10 @@
         text-align: center;
         font-style: italic;
         color: $white-color-text;
+
+        @include onTablet {
+            grid-column: 2/-2;
+        }
     }
+
 }

@@ -5,11 +5,22 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 5px;
-        background: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);    }
+        background: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);
+    }
+
+    // &__mix {
+    //     display: flex;
+    //     gap: 15px;
+    //     align-items: center;
+    // }
 
     &__social {
         display: flex;
         gap: 5px;
+
+        @include onTablet {
+            margin-left: 50px;
+        }
     }
 
     &__themeswitcher {
@@ -25,6 +36,21 @@
             background-size: contain;
             width: 50%;
             padding-bottom: 50%;
+        }
+    }
+    
+    &__tabletnav {
+        @include onTablet {
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    &__telnone {
+        display: none;
+
+        @include onTablet {
+            display: block;
         }
     }
 }

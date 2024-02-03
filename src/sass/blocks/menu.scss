@@ -47,8 +47,15 @@
         display: flex;
         align-items: center;
         color: $first-color-text;
-        font-weight: 500px;
+        font-weight: 500;
         font-size: 18px;
+        line-height: 18px;
+    }
+
+    &__text {
+        color: $white-color-text;
+        font-weight: 500;
+        font-size: 14px;
         line-height: 18px;
     }
 
