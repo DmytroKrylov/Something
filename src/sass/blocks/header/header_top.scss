@@ -22,22 +22,22 @@
         }
     }
 
-    &__themeswitcher {
-        width: 55px;
-        background-color: white;
-        border-radius: 50px;
-        padding: 3px;
+    // &__themeswitcher {
+    //     width: 55px;
+    //     background-color: white;
+    //     border-radius: 50px;
+    //     padding: 3px;
 
-        &::after {
-            content: '';
-            display: block;
-            background-image: url(../images/icon/span_before.svg);
-            background-size: contain;
-            width: 50%;
-            padding-bottom: 50%;
-            cursor: pointer;
-        }
-    }
+    //     &::after {
+    //         content: '';
+    //         display: block;
+    //         background-image: url(../images/icon/span_before.svg);
+    //         background-size: contain;
+    //         width: 50%;
+    //         padding-bottom: 50%;
+    //         cursor: pointer;
+    //     }
+    // }
     
     &__tabletnav {
         @include onTablet {
@@ -53,4 +53,30 @@
             display: block;
         }
     }
+}
+
+.checkbox { 
+    height: 30px;
+    width: 55px;
+    background: white;
+    appearance: none;
+    border-radius: 50px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 2;
+            left: 2;
+
+            background-image: url(../images/icon/span_before.svg);
+            background-repeat: no-repeat;
+            width: 50%;
+            padding-bottom: 50%;
+            cursor: pointer;
+        }
+
 }
