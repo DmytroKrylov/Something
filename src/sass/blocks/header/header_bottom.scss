@@ -6,6 +6,7 @@
         justify-content: space-between;
         align-items: center;
 
+
         @include onDesktop {
             padding-block: 40px;
         }
@@ -34,6 +35,11 @@
     }
 
     &__logo {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: black;
         transition: transform .5s;
 
         &:hover {
@@ -41,4 +47,17 @@
         }
     }
 
+}
+
+
+.logojs {
+    &.white {
+        color: white;
+    }
+}
+
+.headerjs {    
+    &.dark {
+        background-color: #0E1219;
+    }
 }

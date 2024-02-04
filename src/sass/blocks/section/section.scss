@@ -225,7 +225,12 @@
 }    
 
 .desc {
-    // background-color: #0E1219;
+    &.white {
+        color: white;
+    }
+}
+
+.titlesecondjs {
     &.white {
         color: white;
     }
