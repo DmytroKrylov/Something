@@ -7,6 +7,10 @@ const logojs = document.querySelector('.logojs')
 const titlesecondjs = document.querySelector('.titlesecondjs')
 const cardjs = document.querySelector('.cardjs')
 const logoftjs = document.querySelector('.logoftjs')
+const assidethemeswitcherjs = document.querySelector('.assidethemeswitcherjs')
+const contentjs = document.querySelector('.contentjs')
+const bottomjs = document.querySelector('.bottomjs')
+const textwitejs = document.querySelector('.textwitejs')
 
 
 themeswitcher.addEventListener('click', () => themeswitcher.classList.toggle('active'));
@@ -27,4 +31,14 @@ themeswitcher.addEventListener('click', () => {
     titlesecondjs.classList.toggle('white')
     cardjs.classList.toggle('dark')
     logoftjs.classList.toggle('white')
+})
+
+assidethemeswitcherjs.addEventListener('click', () => assidethemeswitcherjs.classList.toggle('active'));
+bottomjs.addEventListener('click', () => bottomjs.classList.toggle('active'));
+textwitejs.addEventListener('click', () => textwitejs.classList.toggle('active'));
+
+assidethemeswitcherjs.addEventListener('click', () => {
+    contentjs.classList.toggle('dark')
+    bottomjs.classList.toggle('dark')
+    textwitejs.classList.toggle('white')
 })

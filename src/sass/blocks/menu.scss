@@ -56,6 +56,12 @@
     }
 
     &__logo {
+
+        text-transform: uppercase;
+        color: #000;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 23px;
         transition: transform .5s;
 
         &:hover {
@@ -143,5 +149,51 @@
         border: 1px solid $third-color-text;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
-    
+}
+
+.assidethemeswitcherjs {
+    height: 30px;
+    width: 55px;
+    background-color: white;
+    position: relative;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        background-color: #0DD0BA;
+        border-radius: 50%;
+        top: 50%;
+        left: 2px;
+        transform: translateY(-50%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all .5s;
+    }
+
+    &.active::before {
+        background-color: #0E1219;
+        left: calc(100% - 25px - 2px);
+        transition: all .5s;
+    }
+}
+
+.contentjs {
+    &.dark {
+        background-color: #0E1219;
+    }
+}
+
+.bottomjs {
+    &.dark {
+        background-color: #0E1219;
+    }
+}
+
+.textwitejs {
+    &.white {
+        color: white;
+    }
 }
