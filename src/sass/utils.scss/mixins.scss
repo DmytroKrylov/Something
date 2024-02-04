@@ -32,6 +32,12 @@
     }
 }
 
+@mixin titleAnime {
+  @media (min-width: 546px) {
+    @content;
+  }
+}
+
 @mixin hover($property, $toValue) {
   transition: #{$property} 0.5s;
   &:hover {
