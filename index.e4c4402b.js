@@ -1,0 +1,2 @@
+const e=document.querySelector(".themeswitcher"),t=document.querySelectorAll(".darkalljs"),c=document.querySelectorAll(".whitealljs");e.addEventListener("click",(()=>e.classList.toggle("active"))),t.forEach((t=>{t.addEventListener("click",(()=>t.classList.toggle("active"))),e.addEventListener("click",(()=>{t.classList.toggle("dark")}))})),c.forEach((t=>{t.addEventListener("click",(()=>t.classList.toggle("active"))),e.addEventListener("click",(()=>{t.classList.toggle("white")}))}));
+//# sourceMappingURL=index.e4c4402b.js.map
