@@ -1,6 +1,10 @@
 .article {
     background-color: white;
 
+    @include onDesktop {
+        background-color: rgba(217, 217, 217, 0.2); 
+    }
+
     &__content {
         background-image: url(../images/anime.png);
         background-color: rgba(22, 28, 58, 0.5);
@@ -12,6 +16,7 @@
         border-radius: 30px;
         position: relative;
         box-shadow: 0 5px 15px #00000059;
+        z-index: 1;
        
         &::before {
             z-index: 1;
@@ -53,6 +58,11 @@
         @include onTablet {
             top: 50px;
         }
+
+        @include onDesktop {
+            text-align: left;
+            top: 30px;
+        }
     }
 
     &__info {
@@ -72,5 +82,103 @@
         font-size: 20px;
         line-height: 26px;
         color: #707070;
+    }
+
+    &__button {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__btn {
+        display: none;
+
+        @include onDesktop {
+            color: white;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            display: block;
+            position: relative;
+            z-index: 4;
+            border-radius: 17px;
+            border: 1px white solid;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px;
+            left: 125px;
+            top: 70px;
+            cursor: pointer;
+
+            &:hover {
+                background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
+            }
+
+            &--android::before {
+                content: '';
+                background-image: url(../images/icon/btn3.svg);
+                width: 14px;
+                height: 14px;
+            }
+
+            &--ios::before {
+                content: '';
+                background-image: url(../images/icon/btn1.svg);
+                width: 14px;
+                height: 14px;
+            }
+
+            &--download::before {
+                content: '';
+                background-image: url(../images/icon/btn2.svg);
+                width: 14px;
+                height: 14px;
+            }
+
+            &__btnbg {
+                background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
+            }
+        }
+    }
+
+
+    &__wrapper {
+        display: none; 
+
+        @include onDesktop {
+            display: block;
+            padding-block: 30px;
+            background-color: white;
+            border-radius: 0 0 40px 40px;
+    
+            position: relative;
+            top: -25px;          
+        }
+    }
+
+}
+
+.wrapper {
+    &__lists {
+        position: relative;
+        top: 10px;
+        display: flex;
+        gap: 20px;
+        left: 20px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #707070;
+
+        &::after {
+            content: '';
+            border: 0.5px #707070 solid;
+        }
     }
 }
