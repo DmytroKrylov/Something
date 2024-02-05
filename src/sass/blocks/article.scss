@@ -193,6 +193,36 @@
             border: 0.5px #707070 solid;
         }
     }
+
+    &__ratings {
+        position: absolute;
+        right: 45px;
+        bottom: 17px;
+        display: flex;
+        border-radius: 17px;
+        background: linear-gradient(90deg, hsl(39, 100%, 61%), hsl(12, 100%, 45%));
+        box-shadow: 0 5px 15px #00000059;   
+    }
+
+    &__rat {
+        padding-block: 10px;
+        padding-inline: 5px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: white;
+        display: flex;
+        gap: 5px;
+        cursor: pointer;
+        transition: transform .5s;
+
+        &:hover {
+            box-shadow: 0 5px 15px #00000059;
+            transform: scale(1.1);
+            background-color: #0DD0BA;
+            border-radius: 50px;
+        }
+    }
 }
 
 .rating {
