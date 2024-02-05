@@ -1,4 +1,5 @@
 .article {
+    background-color: white;
 
     &__content {
         background-image: url(../images/anime.png);
@@ -51,5 +52,24 @@
         @include onTablet {
             top: 50px;
         }
+    }
+
+    &__info {
+        display: flex;
+        gap: 10px;
+        padding-block: 10px;
+        align-items: center;
+        justify-content: center;
+
+        @include onDesktop {
+            display: none;
+        }
+    }
+
+    &__par {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #707070;
     }
 }

@@ -190,4 +190,12 @@
         background-repeat: no-repeat;
     }
 
+    &--info {
+        background-image: url(../images/icon/info_burger.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 15px;
+    }
+
 }
