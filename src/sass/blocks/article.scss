@@ -11,6 +11,7 @@
         height: 130px;
         border-radius: 30px;
         position: relative;
+        box-shadow: 0 5px 15px #00000059;
        
         &::before {
             z-index: 1;

@@ -1,4 +1,6 @@
 .section {
+    background-color: rgba(217, 217, 217, 0.2); 
+        
     &__content {
         @include contentPaddingInline();
         padding-top: 20px;
@@ -224,14 +226,10 @@
 
 }    
 
-.desc {
-    &.white {
-        color: white;
-    }
-}
+.darkalljs {
+    transition: all .5s;
 
-.titlesecondjs {
-    &.white {
-        color: white;
+    &.dark {
+        background-color: #0E1219;
     }
 }

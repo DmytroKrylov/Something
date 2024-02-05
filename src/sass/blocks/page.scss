@@ -53,12 +53,18 @@
     }
 }
 
-.main {
-    background-color: rgba(217, 217, 217, 0.2);  
-    transition: all 0.5;
+.darkalljs {
+    transition: all .5s;
 
     &.dark {
         background-color: #0E1219;
+    }
+}
+
+.whitealljs {
+    
+    &.white {
+        color: #FFFFFF;
     }
 }
 
