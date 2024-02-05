@@ -5,6 +5,15 @@
         background-color: rgba(217, 217, 217, 0.2); 
     }
 
+    @include onDesktop {
+        &__rating {
+            position: absolute;
+            z-index: 1;
+            right: 200px;
+            top: 22px;
+        }
+    }
+
     &__content {
         background-image: url(../images/anime.png);
         background-color: rgba(22, 28, 58, 0.5);
@@ -87,6 +96,7 @@
     &__button {
         display: flex;
         gap: 10px;
+        position: absolute;
     }
 
     &__btn {
@@ -153,7 +163,9 @@
             border-radius: 0 0 40px 40px;
     
             position: relative;
-            top: -25px;          
+            top: -25px;    
+            
+            box-shadow: 0 5px 15px #00000059;
         }
     }
 
@@ -180,5 +192,51 @@
             content: '';
             border: 0.5px #707070 solid;
         }
+    }
+}
+
+.rating {
+        display: none;
+
+    &__info {
+        display: none;
+
+        @include onDesktop {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            right: 50px;
+            top: 25px;
+        }
+    }
+
+    &__players {
+        color: white;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__rang {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: white;
+    }
+
+    &__now {
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__real {
+        color: #F9B936;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
     }
 }
